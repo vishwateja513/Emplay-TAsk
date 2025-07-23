@@ -1,0 +1,23 @@
+<div class="card">
+  <div class="card-header">
+    <h3 class="card-title">{{ card.title }}</h3>
+    <button 
+      class="delete-btn" 
+      (click)="onDelete()"
+      title="Delete card"
+      type="button">
+      ×
+    </button>
+  </div>
+  <div class="card-content">
+    <p class="card-description">{{ card.description }}</p>
+  </div>
+  <div class="card-actions">
+    <button 
+      class="edit-btn" 
+      (click)="onEdit()"
+      type="button">
+      Edit
+    </button>
+  </div>
+</div>
